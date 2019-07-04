@@ -1,0 +1,29 @@
+name: pluscode_api
+version: 0.1.0
+
+authors:
+  - Chris Watson <cawatson1993@gmail.com>
+
+targets:
+  pluscode_api:
+    main: src/pluscode_api.cr
+
+crystal: 0.29.0
+
+dependencies:
+  lucky:
+    github: luckyframework/lucky
+    version: ~> 0.15.0
+  authentic:
+    github: luckyframework/authentic
+    version: ~> 0.3.0
+  carbon:
+    github: luckyframework/carbon
+    version: ~> 0.1.0
+  dotenv:
+    github: gdotdesign/cr-dotenv
+  pluscode:
+    github: watzon/pluscode
+  google_maps_api:
+    github: fridgerator/google_maps_api
+    branch: master
