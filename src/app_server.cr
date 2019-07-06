@@ -9,6 +9,10 @@ class AppServer < Lucky::BaseAppServer
       # Lucky::SessionHandler.new,
       # Lucky::FlashHandler.new,
       Lucky::ErrorHandler.new(action: Errors::Show),
+
+      # Handler CORS
+      CORSHandler.new,
+
       Lucky::RouteHandler.new,
 
       # Disabled in API mode:
